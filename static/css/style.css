@@ -6,6 +6,7 @@
 }
 body {
   margin-top: 30px;
+  margin-left: 70px;
 }
 nav {
   width: 150px;
@@ -13,9 +14,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   float: right;
-  border: 1px solid red;
 }
-
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -77,4 +76,16 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Div Introduction */
+.greeting {
+  display: flex;
+  align-items: center;
+}
+.divIntroduction p {
+  font-size: 3em;
+}
+.intro {
+  width: 60%;
 }
