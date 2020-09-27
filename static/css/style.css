@@ -1,132 +1,133 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: none;
-  font-family: "Source Sans Pro", sans-serif;
-  /* border: 1px solid green; */
+	padding: 0;
+	margin: 0;
+	box-sizing: none;
+	font-family: "Source Sans Pro", sans-serif;
+	/* border: 1px solid green; */
 }
 .dark-mode {
-  background-color: #000000;
-  color: white;
+	background-color: #000000;
+	color: white;
 }
 body {
-  margin-top: 30px;
-  margin-left: 100px;
+	margin-top: 30px;
+	margin-left: 100px;
 }
 .white-icon {
-  filter: invert(100%);
+	filter: invert(100%);
 }
 nav {
-  position: absolute;
-  top: 40px;
-  right: 30px;
-  width: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 /* The switch - the box around the slider */
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
 }
 
 /* Hide default HTML checkbox */
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+	opacity: 0;
+	width: 0;
+	height: 0;
 }
 
 /* The slider */
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #cf6400;
+	background-color: #cf6400;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #000000;
+	box-shadow: 0 0 1px #000000;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+	border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
 /* Div Introduction */
 .greeting {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 .greeting p {
-  margin-right: 20px;
+	margin-right: 20px;
 }
 .divIntroduction {
-  position: relative;
-  margin-top: 100px;
+	position: relative;
+	margin-top: 80px;
 }
 .divIntroduction p {
-  font-size: 3em;
+	font-size: 3em;
 }
 .intro {
-  margin-top: 75px;
-  width: 850px;
+	margin-top: 75px;
+	width: 850px;
 }
 .intro p {
-  font-size: 55px;
+	font-size: 55px;
 }
 .intro b {
-  font-size: 60px;
+	font-size: 60px;
 }
 .email {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 600px;
-  margin-top: 75px;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 600px;
+	margin-top: 75px;
 }
 .email p {
-  font-size: 30px;
+	font-size: 30px;
 }
 address a {
-  text-decoration: none;
-  font-style: normal;
-  font-size: 30px;
-  color: black;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 30px;
+	color: black;
+	border-bottom: 3px solid rgb(255, 132, 0);
 }
