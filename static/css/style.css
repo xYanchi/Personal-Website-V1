@@ -13,6 +13,9 @@ body {
   margin-top: 30px;
   margin-left: 100px;
 }
+.white-icon {
+  filter: invert(100%);
+}
 nav {
   position: absolute;
   top: 40px;
@@ -101,7 +104,7 @@ input:checked + .slider:before {
   font-size: 3em;
 }
 .intro {
-  margin-top: 100px;
+  margin-top: 75px;
   width: 850px;
 }
 .intro p {
@@ -116,7 +119,7 @@ input:checked + .slider:before {
   justify-content: space-between;
   align-items: center;
   width: 600px;
-  margin-top: 50px;
+  margin-top: 75px;
 }
 .email p {
   font-size: 30px;
