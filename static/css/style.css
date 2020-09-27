@@ -2,18 +2,21 @@
   padding: 0;
   margin: 0;
   box-sizing: none;
-  font-family: sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  /* border: 1px solid green; */
 }
 body {
   margin-top: 30px;
-  margin-left: 70px;
+  margin-left: 100px;
 }
 nav {
+  position: absolute;
+  top: 40px;
+  right: 30px;
   width: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  float: right;
 }
 /* The switch - the box around the slider */
 .switch {
@@ -83,9 +86,38 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
 }
+.divIntroduction {
+  position: relative;
+  margin-top: 100px;
+}
 .divIntroduction p {
   font-size: 3em;
 }
 .intro {
-  width: 60%;
+  margin-top: 100px;
+  width: 850px;
+}
+.intro p {
+  font-size: 55px;
+}
+.intro b {
+  font-size: 60px;
+}
+.email {
+  border: 1px solid red;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  margin-top: 50px;
+}
+.email p {
+  font-size: 30px;
+}
+address a {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 30px;
+  color: white;
 }
