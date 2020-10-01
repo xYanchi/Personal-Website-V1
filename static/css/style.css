@@ -12,6 +12,7 @@
 body {
 	margin-top: 30px;
 	margin-left: 100px;
+	transition-duration: 1s;
 }
 .white-icon {
 	filter: invert(100%);
@@ -130,4 +131,5 @@ address a {
 	font-size: 30px;
 	color: black;
 	border-bottom: 3px solid rgb(255, 132, 0);
+	transition-duration: 1s;
 }
