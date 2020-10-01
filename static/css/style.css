@@ -5,18 +5,11 @@
 	font-family: "Source Sans Pro", sans-serif;
 	/* border: 1px solid green; */
 }
-.dark-mode {
-	background-color: #000000;
-	color: white;
-}
 body {
 	background-color: rgb(223, 223, 235);
 	margin-top: 30px;
 	margin-left: 100px;
 	transition-duration: 0.5s;
-}
-.white-icon {
-	filter: invert(100%);
 }
 nav {
 	position: absolute;
