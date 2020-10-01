@@ -12,17 +12,18 @@ function darkMode() {
 		email.style.color = "white";
 		iconSun.style.filter = "invert(100%)";
 		iconMoon.style.filter = "invert(100%)";
-		body.style.backgroundColor = "black";
+		body.style.backgroundColor = "rgb(1, 0, 13)";
 		body.style.color = "white";
 	} else if (!document.getElementById("mySwitch").checked) {
 		email.style.color = "black";
 		iconSun.style.filter = "invert(0%)";
 		iconMoon.style.filter = "invert(0%)";
-		body.style.backgroundColor = "white";
+		body.style.backgroundColor = "rgb(223, 223, 235)";
 		body.style.color = "black";
 	}
 }
-
+//0, 0, 13
+//1, 0, 28
 
 // function animateText(textArea) {
 // 	let text = textArea.value;

@@ -10,6 +10,7 @@
 	color: white;
 }
 body {
+	background-color: rgb(223, 223, 235);
 	margin-top: 30px;
 	margin-left: 100px;
 	transition-duration: 0.5s;
