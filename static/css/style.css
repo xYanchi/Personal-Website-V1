@@ -127,11 +127,30 @@ input:checked + .slider:before {
 	transition-duration: 1s;
 }
 .divBackground{
-	border: 1px solid red;
+	margin-top: 20%;
+	/* border: 1px solid red; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 200px;
+}
+.div-bgc-wrapper{
+	/* border: 1px solid green; */
+	width: 60%;;
+	display: flex;
+	justify-content: center;
+}
+.div-p-bgc{
+	/* border: 1px solid red; */
+	font-weight: bold;
+	font-size: larger;
+	margin-right: 50px;
+}
+.div-bgc{
+	/* border: 1px solid red; */
+	width: 75%;
+	font-size: larger;
+	text-align: justify;
 }
 
