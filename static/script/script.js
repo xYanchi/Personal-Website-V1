@@ -7,7 +7,6 @@ function darkMode() {
 	let iconSun = document.getElementById("iconSun");
 	let iconMoon = document.getElementById("iconMoon");
 	let body = document.body;
-
 	if (document.getElementById("mySwitch").checked) {
 		email.style.color = "white";
 		iconSun.style.filter = "invert(100%)";
@@ -21,4 +20,9 @@ function darkMode() {
 		body.style.backgroundColor = "rgb(223, 223, 235)";
 		body.style.color = "black";
 	}
+}
+
+function emailBottomGoUp() {
+	let email = document.getElementById("email");
+	email.style.borderBottom
 }

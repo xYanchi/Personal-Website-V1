@@ -6,9 +6,9 @@
 	/* border: 1px solid green; */
 }
 body {
-	background-color: rgb(223, 223, 235);
+	background-color: white;
 	margin-top: 30px;
-	margin-left: 100px;
+	/* margin-left: 100px; */
 	transition-duration: 0.5s;
 }
 nav {
@@ -92,8 +92,8 @@ input:checked + .slider:before {
 	margin-right: 20px;
 }
 .divIntroduction {
-	position: relative;
-	margin-top: 80px;
+	margin-top: 150px;
+	margin-left: 10%;
 }
 .divIntroduction p {
 	font-size: 3em;
@@ -109,7 +109,6 @@ input:checked + .slider:before {
 	font-size: 60px;
 }
 .email {
-	position: absolute;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -119,7 +118,7 @@ input:checked + .slider:before {
 .email p {
 	font-size: 30px;
 }
-address a {
+#email {
 	text-decoration: none;
 	font-style: normal;
 	font-size: 30px;
@@ -127,3 +126,12 @@ address a {
 	border-bottom: 3px solid rgb(255, 132, 0);
 	transition-duration: 1s;
 }
+.divBackground{
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 200px;
+}
+
