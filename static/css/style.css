@@ -137,7 +137,7 @@ input:checked + .slider:before {
 }
 .div-bgc-wrapper{
 	/* border: 1px solid green; */
-	width: 60%;;
+	width: 70%;;
 	display: flex;
 	justify-content: center;
 }
@@ -165,7 +165,7 @@ input:checked + .slider:before {
 	position: relative;
 }
 .div-exp-wrapper{
-	width: 45%;
+	width: 55%;
 	display: flex;
 }
 .div-exp p{
@@ -183,4 +183,3 @@ input:checked + .slider:before {
 	font-family: 'Inconsolata', monospace;
 	font-size: 1.3em;
 }
-
