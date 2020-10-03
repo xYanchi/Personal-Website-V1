@@ -127,7 +127,7 @@ input:checked + .slider:before {
 	transition-duration: 1s;
 }
 .divBackground{
-	margin-top: 20%;
+	margin-top: 25%;
 	/* border: 1px solid red; */
 	display: flex;
 	justify-content: center;
@@ -141,16 +141,46 @@ input:checked + .slider:before {
 	display: flex;
 	justify-content: center;
 }
-.div-p-bgc{
+.div-p-bgc, .div-p-exp, .div-p-proj{
 	/* border: 1px solid red; */
 	font-weight: bold;
-	font-size: larger;
+	font-size: 1.5em;
 	margin-right: 50px;
+	color:rgb(255, 132, 0) ;
 }
 .div-bgc{
 	/* border: 1px solid red; */
-	width: 75%;
-	font-size: larger;
+	width: 60%;
+	font-size: 1.5em;
 	text-align: justify;
+	line-height: 170%;
+}
+/* Experience */
+.divExperience{
+	margin-top: 25%;
+	margin-bottom: 25%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+}
+.div-exp-wrapper{
+	width: 45%;
+	display: flex;
+}
+.div-exp p{
+	font-size: 1.5em;
+	line-height: 170%;
+}
+.p-exp-company{
+	font-weight: bold;
+}
+.div-date{
+	position: absolute;
+	right: 15px;
+} 
+.div-date p{
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.3em;
 }
 

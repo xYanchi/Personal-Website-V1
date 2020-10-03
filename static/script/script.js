@@ -23,6 +23,5 @@ function darkMode() {
 }
 
 function emailBottomGoUp() {
-	let email = document.getElementById("email");
-	email.style.borderBottom
+
 }
