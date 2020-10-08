@@ -166,11 +166,13 @@ input:checked + .slider:before {
 .divExperience{
 	/* border: 1px solid red; */
 	margin-top: 25%;
-	margin-bottom: 25%;
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	position: relative;
+}
+.div-p-exp{
+	margin-top: -5px;
 }
 .div-exp-wrapper{
 	/* border: 1px solid green; */
@@ -181,9 +183,10 @@ input:checked + .slider:before {
 .div-exp{
 	width: 60%;
 	/* border: 1px solid red; */
+	margin-right: 45px;
 }
 .div-exp p{
-	font-size: 1.5em;
+	font-size: 1.6em;
 	line-height: 130%;
 }
 #p-exp-company{
@@ -194,7 +197,8 @@ input:checked + .slider:before {
 }
 .div-date{
 	position: absolute;
-	right: 50px;
+	font-size: large;
+	right: 60px;
 } 
 .div-date p{
 	font-family: 'Inconsolata', monospace;
@@ -204,5 +208,5 @@ input:checked + .slider:before {
 .divProjects{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 25%;
+	margin-top: 25%;
 }
