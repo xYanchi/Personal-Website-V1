@@ -5,96 +5,34 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Haymond's Portfolio</title>
-	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
-	<script src="../script/script.js"></script>
+	<script src="script/script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-	<nav>
-		<img src="../img/sun.png" alt="" id="iconSun" />
-		<div class="switchDarkMode">
-			<label class="switch">
-				<input type="checkbox" id="mySwitch" onclick="darkMode()" />
-				<span class="slider round"></span>
-			</label>
-		</div>
-		<img src="../img/moon.png" alt="" id="iconMoon" />
-	</nav>
+	
 
-	<div class="divIntroduction">
-		<div class="greeting">
-			<p>Hello!</p>
-			<img src="../img/handwave.png" alt="hand waving" width="50px" id="imgHandWave" />
-		</div>
-		<div class="intro">
-			<p>
-				I'm <b>Haymond Yan</b>, a design-minded front-end web developer focused on building beautiful interfaces
-				&
-				experiences
-			</p>
-		</div>
-		<div class="email">
-			<p>Get in touch</p>
-			<img src="../img/point.png" alt="hand pointing to the right" />
-			<address>
-				<a href="mailto:haymondyantech@gmail.com" id="email">haymondyantech@gmail.com</a>
-			</address>
-		</div>
-	</div>
-	<div class="divBackground">
-		<div class="div-bgc-wrapper">
-			<div class="div-p-bgc">
-				Background
-			</div>
-			<div class="div-bgc">
-				<p>I'm currently a student at <a href="https://www.vaniercollege.qc.ca/" target="e_blank"
-						id="a-school">Vanier College</a> studying Computer Science Technology, deciding whether
-					self-teaching is a better
-					path than university.</p>
-				<p>Striving to be a better front-end developer every single day. Learning React as this library leads
-					to versatility and innovations with mobile and web apps by using React Native. I personally love how
-					design changes the whole user experience!</p>
-				<p><b>When I am not in front of the 🖥️</b>, I am most likely enjoying a walk.
-					Wishing you a good day and I hope we can collaborate!🤝</p>
-			</div>
-		</div>
-	</div>
-	<div class="divExperience">
-		<div class="div-exp-wrapper">
-			<div class="div-p-exp">
-				Volunteer
-				Work
-			</div>
-			<div class="div-exp">
-				<a href="https://louisjacob.ca/" target="e_blank" id="p-exp-company">
-					<p>Louis & Jacob</p>
-				</a>
-				<p class="p-exp-title">System Developer</p>
-			</div>
-		</div>
-		<div class="div-date">
-			<p>February 2020 - May 2020</p>
-		</div>
-	</div>
-	<div class="divProjects">
-		<div class="div-p-proj">
-			<p>Featured Projects</p>
-			<div class="div-all-projects">
-				<div class="div-one-project">
-					<p>Project 1</p>
-				</div>
-				<div class="div-one-project">
-					<p>Project 2</p>
-				</div>
-				<div class="div-one-project">
-					<p>Project 3</p>
-				</div>
-			</div>
-		</div>
-	</div>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+	<script>
+		const options = {
+			// bottom: '64px', // default: '32px'
+			// right: 'unset', // default: '32px'
+			// left: '32px', // default: 'unset'
+			// time: '', // default: '0.3s'
+			mixColor: '#fff', // default: '#fff'
+			backgroundColor: '#fff',  // default: '#fff'
+			buttonColorDark: '#100f2c',  // default: '#100f2c'
+			buttonColorLight: '#fff', // default: '#fff'
+			saveInCookies: false, // default: true,
+			label: '🌓', // default: ''
+			autoMatchOsTheme: true // default: true
+		}
+		const darkmode = new Darkmode(options);
+		darkmode.showWidget();
+	</script>
 </body>
 
 </html>
