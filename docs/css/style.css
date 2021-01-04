@@ -3,11 +3,305 @@
 	margin: 0;
 	box-sizing: none;
 	font-family: "Source Sans Pro", sans-serif;
-	/* font-family: "Inconsolata", monospace; */
-	/* color: rgb(255, 132, 0); */
+
 	/* border: 1px solid green; */
 }
 body {
-	background-color: rgb(223, 223, 245);
+	/* background-color: rgb(223, 223, 245); */
+	/* margin-top: 30px; */
 	/* margin-left: 100px; */
+	/* transition-duration: 0.5s; */
 }
+.helloDiv {
+	display: flex;
+	align-items: center;
+	/* border: 1px solid; */
+}
+.helloDiv p {
+	font-size: 3.5em;
+	margin-right: 25px;
+	/* color: white; */
+}
+.darkmode--activated body {
+	background-color: blue;
+}
+
+/* Animista.net */
+.wobble-hor-bottom {
+	-webkit-animation: wobble-hor-bottom 1.5s both;
+	animation: wobble-hor-bottom 1.5s both;
+}
+@-webkit-keyframes wobble-hor-bottom {
+	0%,
+	100% {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+	}
+	15% {
+		-webkit-transform: translateX(-30px) rotate(-6deg);
+		transform: translateX(-30px) rotate(-6deg);
+	}
+	30% {
+		-webkit-transform: translateX(15px) rotate(6deg);
+		transform: translateX(15px) rotate(6deg);
+	}
+	45% {
+		-webkit-transform: translateX(-15px) rotate(-3.6deg);
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+	60% {
+		-webkit-transform: translateX(9px) rotate(2.4deg);
+		transform: translateX(9px) rotate(2.4deg);
+	}
+	75% {
+		-webkit-transform: translateX(-6px) rotate(-1.2deg);
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+@keyframes wobble-hor-bottom {
+	0%,
+	100% {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+	}
+	15% {
+		-webkit-transform: translateX(-30px) rotate(-6deg);
+		transform: translateX(-30px) rotate(-6deg);
+	}
+	30% {
+		-webkit-transform: translateX(15px) rotate(6deg);
+		transform: translateX(15px) rotate(6deg);
+	}
+	45% {
+		-webkit-transform: translateX(-15px) rotate(-3.6deg);
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+	60% {
+		-webkit-transform: translateX(9px) rotate(2.4deg);
+		transform: translateX(9px) rotate(2.4deg);
+	}
+	75% {
+		-webkit-transform: translateX(-6px) rotate(-1.2deg);
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+/* Wobble Horizontal Hover.css*/
+@-webkit-keyframes hvr-wobble-horizontal {
+	16.65% {
+		-webkit-transform: translateX(8px);
+		transform: translateX(8px);
+	}
+	33.3% {
+		-webkit-transform: translateX(-6px);
+		transform: translateX(-6px);
+	}
+	49.95% {
+		-webkit-transform: translateX(4px);
+		transform: translateX(4px);
+	}
+	66.6% {
+		-webkit-transform: translateX(-2px);
+		transform: translateX(-2px);
+	}
+	83.25% {
+		-webkit-transform: translateX(1px);
+		transform: translateX(1px);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+@keyframes hvr-wobble-horizontal {
+	16.65% {
+		-webkit-transform: translateX(8px);
+		transform: translateX(8px);
+	}
+	33.3% {
+		-webkit-transform: translateX(-6px);
+		transform: translateX(-6px);
+	}
+	49.95% {
+		-webkit-transform: translateX(4px);
+		transform: translateX(4px);
+	}
+	66.6% {
+		-webkit-transform: translateX(-2px);
+		transform: translateX(-2px);
+	}
+	83.25% {
+		-webkit-transform: translateX(1px);
+		transform: translateX(1px);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+.hvr-wobble-horizontal {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-horizontal:hover,
+.hvr-wobble-horizontal:focus,
+.hvr-wobble-horizontal:active {
+	-webkit-animation-name: hvr-wobble-horizontal;
+	animation-name: hvr-wobble-horizontal;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
+/* nav {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.greeting {
+	display: flex;
+	align-items: center;
+}
+.greeting p {
+	margin-right: 30px;
+}
+.divIntroduction {
+	margin-top: 150px;
+	margin-left: 10%;
+}
+.divIntroduction p {
+	font-size: 3em;
+}
+.intro {
+	margin-top: 75px;
+	width: 850px;
+}
+.intro p {
+	font-size: 55px;
+	text-align: left;
+}
+.intro b {
+	font-size: 60px;
+}
+.email {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 600px;
+	margin-top: 75px;
+}
+.email p {
+	font-size: 30px;
+}
+#email {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 30px;
+	color: black;
+	border-bottom: 3px solid rgb(255, 132, 0);
+	transition-duration: 1s;
+}
+.divBackground {
+	margin-top: 25%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.div-bgc-wrapper {
+	width: 70%;
+	display: flex;
+	justify-content: center;
+}
+.div-p-bgc,
+.div-p-exp,
+.div-p-proj {
+	font-weight: bold;
+	font-size: 1.9em;
+	margin-right: 50px;
+	color: rgb(255, 132, 0);
+}
+.div-bgc {
+	width: 60%;
+	font-size: 1.7em;
+	text-align: justify;
+	line-height: 170%;
+}
+.div-bgc p {
+	padding-bottom: 20px;
+}
+.div-bgc a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+.divExperience {
+	margin-top: 25%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+}
+.div-p-exp {
+	margin-top: -5px;
+}
+.div-exp-wrapper {
+	width: 70%;
+	display: flex;
+	justify-content: center;
+}
+.div-exp {
+	width: 60%;
+	margin-right: 45px;
+}
+.div-exp p {
+	font-size: 1.6em;
+	line-height: 130%;
+}
+#p-exp-company {
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	width: fit-content;
+}
+.div-date {
+	position: absolute;
+	font-size: large;
+	right: 60px;
+}
+.div-date p {
+	font-family: "Inconsolata", monospace;
+	font-size: 1.3em;
+}
+.divProjects {
+	margin-top: 25%;
+	display: flex;
+	justify-content: center;
+}
+.divProjects p {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.div-all-projects {
+	display: flex;
+	justify-content: space-between;
+}
+.div-one-project {
+	margin: 0px 50px 0px 50px;
+	width: 250px;
+	height: 275px;
+	background-color: white;
+	border-radius: 10%;
+} */
