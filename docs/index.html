@@ -1,127 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Haymond's Portfolio</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Animations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
-
 <body>
-		<!-- data-aos="flip-right" -->
-	<div class="helloDiv">
-		<p>Hello!</p>
-			<img class="darkmode-ignore wobble-hor-bottom hvr-wobble-horizontal " src="img/handwave.png" alt="hand waving" width="50px" id="imgHandWave" />
-		
-	</div>
-	<!-- <div>alllll</div> -->
-	<!-- <div class="divIntroduction">
-		<div class="greeting">
-			<p>Hello!</p>
-			<img src="img/handwave.png" alt="hand waving" width="50px" id="imgHandWave" />
-		</div>
-		<div class="intro">
-			<p>
-				I'm <b>Haymond Yan</b>, a detailed-oriented front-end web developer focused on building beautiful interfaces
-				&
-				experiences
-			</p>
-		</div>
-		<div class="email">
-			<p>Get in touch</p>
-			<img src="img/point.png" alt="hand pointing to the right" />
-			<address>
-				<a href="mailto:haymondyantech@gmail.com" id="email">haymondyantech@gmail.com</a>
-			</address>
-		</div>
-	</div>
+    <div class="parallax-container">
+        <nav>
+            <ul>
+                <li class="hoverli"><a href="">Home</a></li>
+                <li class="hoverli"><a href="">Services</a></li>
+                <li class="hoverli"><a href="">Our Team</a></li>
+                <li class="hoverli"><a href="">Projects</a></li>
+                <li class="hoverli"><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="rellax" data-rellax-speed="-6" data-tilt>
+            <div class="techDStep" data-aos="flip-right">
+				<p>Hello!</p> 
+				<p>I'm Haymond</p> 
+            </div>
+        </div>
+        <img class="kenburns-top" src="img/ocean.jpg" alt="">
+    </div>
+    
+    <!-- <div class="container">
+        <div class="img1" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"
+                          data-tilt></div>
+        <div class="img2" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"
+                          data-tilt></div>
+        <div class="img3" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"
+                          data-tilt></div>
+        <div class="img4" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"
+                          data-tilt></div>
+        <div class="img5" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"
+                          data-tilt></div>
+        <div class="img6" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"
+                          data-tilt></div>
+        <div class="img7" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"
+                          data-tilt></div>
+        <div class="img8" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"
+                          data-tilt></div>
+    </div> -->
+    <!-- <div class="parallax-horizontal animate__animated animate__tada"> 
+        <img class="heartbeat" src="img/heart.png" alt="heartbeat">
+        <h1 class="text-pop-up-top heartBeatPress">Press</h1>
+    </div>
+    <div class="hiddenDiv">
+        <img class="hiddenImg roll-in-right" src="img/submit.png" alt="" hidden>
+    </div>
+    <div class="appearDiv">
+        <h1 class="appearMsg scale-in-hor-center" hidden>I love you Jana <3</h1>
+    </div>
+    <div class="restartDiv">
+        <p class="btnRestart" hidden>Restart</p>
+    </div> -->
+    <div class="heartDiv" data-tilt>
+        <div class="innerheartDiv">
+            
+            <p class="p-heart">Parallax 3d</p>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" integrity="sha512-jeYvJdyAYkpQCY/omvCYQo89qA5YxDW4JBT7COPsHT2sOAanwxkZRFeP9gc69b5reSDpZIoyCqZQZcWZkbB5Gw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="script/hover.js"></script>
+    <script src="script/rellax.js"></script>
 
-	
-	<div class="divBackground">
-		<div class="div-bgc-wrapper">
-			<div class="div-p-bgc">
-				Background
-			</div>
-			<div class="div-bgc">
-				<p>I'm currently a student at <a href="https://www.vaniercollege.qc.ca/" target="e_blank"
-						id="a-school">Vanier College</a> studying Computer Science Technology, deciding whether
-					self-teaching is a better
-					path than university.</p>
-				<p>Striving to be a better front-end developer every single day. Learning React as this library leads
-					to versatility and innovations with mobile and web apps by using React Native. I personally love how
-					design changes the whole user experience!</p>
-				<p><b>When I am not in front of the 🖥️</b>, I am most likely enjoying a walk.
-					Wishing you a good day and I hope we can collaborate!🤝</p>
-			</div>
-		</div>
-	</div>
-	<div class="divExperience">
-		<div class="div-exp-wrapper">
-			<div class="div-p-exp">
-				Volunteer
-				Work
-			</div>
-			<div class="div-exp">
-				<a href="https://louisjacob.ca/" target="e_blank" id="p-exp-company">
-					<p>Louis & Jacob</p>
-				</a>
-				<p class="p-exp-title">System Developer</p>
-			</div>
-		</div>
-		<div class="div-date">
-			<p>February 2020 - May 2020</p>
-		</div>
-	</div>
-	<div class="divProjects">
-		<div class="div-p-proj">
-			<p>Featured Projects</p>
-			<div class="div-all-projects">
-				<div class="div-one-project">
-					<p>Project 1</p>
-				</div>
-				<div class="div-one-project">
-					<p>Project 2</p>
-				</div>
-				<div class="div-one-project">
-					<p>Project 3</p>
-				</div>
-			</div>
-		</div>
-	</div> -->
-<script src="script/script.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-	<script>
-		const options = {
-			// bottom: '64px', // default: '32px'
-			// right: 'unset', // default: '32px'
-			// left: '32px', // default: 'unset'
-			// time: '', // default: '0.3s'
-			mixColor: '#fff', // default: '#fff'
-			backgroundColor: '#f2f2f2',  // default: '#fff'
-			buttonColorDark: '#001a33',  // default: '#100f2c'
-			buttonColorLight: '#fff', // default: '#fff'
-			saveInCookies: false, // default: true,
-			label: '🌓', // default: ''
-			autoMatchOsTheme: true // default: true
-		}
-		const darkmode = new Darkmode(options);
-		darkmode.showWidget();
-	</script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	  </script>
-	  <script>
-		  
-		//   if(darkmode.isActivated()){
-		// 	  $('body').css({backgroundColor : "#001a33"});
-		//   }
-	  </script>
+    <script src="script/transitions.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+        new Rellax('.rellax');
+    </script>
+
+    <script>
+        // $('.parallax-container').tilt({
+        //     glare: true,
+        //     maxGlare: .5
+        // });
+        // $('.img2').tilt({
+        //     reset: false
+        // });
+        // $('.img3').tilt({
+        //     scale: 1.2
+        // });
+        $('.hoverli').mouseenter(function(){
+            $(this).addClass("animate__animated animate__rubberBand");
+        });
+        $('.hoverli').mouseleave(function(){
+            setTimeout(() => {
+                $(this).removeClass("animate__animated animate__rubberBand");
+            }, 500);
+        });
+        
+        $('.techDStep').mouseenter(function(){
+            $(this).addClass("animate__animated animate__jello");
+        });
+        $('.techDStep').mouseleave(function(){
+            setTimeout(() => {
+                $(this).removeClass("animate__animated animate__jello"); 
+            }, 500);
+        });
+        $('.heartBeatPress').click(function(){
+            $('.parallax-horizontal').removeClass("animate__animated");
+            $('.parallax-horizontal').removeClass("animate__tada");
+            $('.parallax-horizontal').addClass("bounce-out-left");
+            setTimeout(function(){
+                $('.hiddenImg').removeAttr('hidden');
+            }, 1500);
+        });
+        $('.hiddenImg').click(function(){
+            $('.hiddenImg').addClass("scale-out-horizontal");
+            setTimeout(function(){
+                $('.appearMsg').removeAttr('hidden');
+            }, 1000);
+            setTimeout(function(){
+                $('.btnRestart').addClass("bounce-in-bck");
+                $('.btnRestart').attr('hidden', false);
+            }, 2000);
+        });
+        $('.btnRestart').click(function(){
+            // $('.btnRestart').attr("hidden", true);
+            
+            $('.appearMsg').addClass("slide-out-top");
+
+            $('.btnRestart').addClass("slide-out-top");
+            setTimeout(() => {
+                window.location.reload();
+            }, 500);
+        });
+    </script>
+    
 </body>
-
 </html>
