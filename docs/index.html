@@ -6,26 +6,28 @@
     <title>Parallax Animations</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Sriracha&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="parallax-container">
         <nav>
             <ul>
-                <li class="hoverli"><a href="">Home</a></li>
-                <li class="hoverli"><a href="">Services</a></li>
-                <li class="hoverli"><a href="">Our Team</a></li>
-                <li class="hoverli"><a href="">Projects</a></li>
-                <li class="hoverli"><a href="">Contact Us</a></li>
+				<li class="hoverli"><a href="">FR</a></li>
+                <li class="hoverli"><a href="">About Me</a></li>
+                <li class="hoverli"><a href="">My Projects</a></li>
+                <li class="hoverli contactli"><a href="">Contact Me</a></li>
             </ul>
         </nav>
-        <div class="rellax" data-rellax-speed="-6" data-tilt>
+        <div class="rellax" data-rellax-speed="-6">
             <div class="techDStep" data-aos="flip-right">
 				<p>Hello!</p> 
-				<p>I'm Haymond</p> 
+				<p>I'm Haymond</p>
             </div>
         </div>
         <img class="kenburns-top" src="img/ocean.jpg" alt="">
@@ -77,14 +79,46 @@
     </div>
     <div class="restartDiv">
         <p class="btnRestart" hidden>Restart</p>
-    </div> -->
-    <div class="heartDiv" data-tilt>
+	</div> -->
+
+    <!-- <div class="heartDiv" data-tilt data-aos="fade-down"
+	data-aos-easing="linear"
+	data-aos-duration="700">
         <div class="innerheartDiv">
             
             <p class="p-heart">Parallax 3d</p>
         </div>
-    </div>
-    
+    </div> -->
+	<div class="aboutMeDiv">            
+		<div class="aboutMePicDiv" >
+			<img class="aboutMePic" src="img/haymond.jpg" alt="" data-aos="fade-down"
+								                                 data-aos-easing="linear"
+                                                                 data-aos-duration="700">
+            
+		</div>
+		<div class="aboutMeDescriptionDiv">
+            <div class="title" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="700">Who am I?</div>
+            <p data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500">
+                I am a student in Vanier College finishing his Computer Science Technology DEC.
+            </p>
+            <p data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="700">
+                I'm a detailed-oriented front-end web developer focused on bringing life beautiful interfaces & experiences. 
+            </p>
+            <p data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="900">
+                I will be working with <a href="https://drivemarketing.ca/en/" target="e_blank">Drive Marketing</a> , a digital agency that helps businesses with marketing, conception, programming and analytics providing the best ROI.
+            </p>
+		</div>		
+	</div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" integrity="sha512-jeYvJdyAYkpQCY/omvCYQo89qA5YxDW4JBT7COPsHT2sOAanwxkZRFeP9gc69b5reSDpZIoyCqZQZcWZkbB5Gw==" crossorigin="anonymous"></script>
@@ -129,35 +163,34 @@
             setTimeout(() => {
                 $(this).removeClass("animate__animated animate__jello"); 
             }, 500);
-        });
-        $('.heartBeatPress').click(function(){
-            $('.parallax-horizontal').removeClass("animate__animated");
-            $('.parallax-horizontal').removeClass("animate__tada");
-            $('.parallax-horizontal').addClass("bounce-out-left");
-            setTimeout(function(){
-                $('.hiddenImg').removeAttr('hidden');
-            }, 1500);
-        });
-        $('.hiddenImg').click(function(){
-            $('.hiddenImg').addClass("scale-out-horizontal");
-            setTimeout(function(){
-                $('.appearMsg').removeAttr('hidden');
-            }, 1000);
-            setTimeout(function(){
-                $('.btnRestart').addClass("bounce-in-bck");
-                $('.btnRestart').attr('hidden', false);
-            }, 2000);
-        });
-        $('.btnRestart').click(function(){
-            // $('.btnRestart').attr("hidden", true);
+		});
+        // $('.heartBeatPress').click(function(){
+        //     $('.parallax-horizontal').removeClass("animate__animated");
+        //     $('.parallax-horizontal').removeClass("animate__tada");
+        //     $('.parallax-horizontal').addClass("bounce-out-left");
+        //     setTimeout(function(){
+        //         $('.hiddenImg').removeAttr('hidden');
+        //     }, 1500);
+        // });
+        // $('.hiddenImg').click(function(){
+        //     $('.hiddenImg').addClass("scale-out-horizontal");
+        //     setTimeout(function(){
+        //         $('.appearMsg').removeAttr('hidden');
+        //     }, 1000);
+        //     setTimeout(function(){
+        //         $('.btnRestart').addClass("bounce-in-bck");
+        //         $('.btnRestart').attr('hidden', false);
+        //     }, 2000);
+        // });
+        // $('.btnRestart').click(function(){
             
-            $('.appearMsg').addClass("slide-out-top");
+            // $('.appearMsg').addClass("slide-out-top");
 
-            $('.btnRestart').addClass("slide-out-top");
-            setTimeout(() => {
-                window.location.reload();
-            }, 500);
-        });
+            // $('.btnRestart').addClass("slide-out-top");
+            // setTimeout(() => {
+            //     window.location.reload();
+            // }, 500);
+        // });
     </script>
     
 </body>

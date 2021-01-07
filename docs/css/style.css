@@ -2,16 +2,20 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Lobster", cursive;
+	/* font-family: "Lobster", cursive; */
 	color: white;
+}
+.parallax-container {
+	font-family: "Lobster", cursive;
 }
 body {
 	background-color: rgb(0, 13, 24);
 }
-.heartDiv,
+
+/* .heartDiv,
 .innerheartDiv {
 	background-color: rgb(0, 13, 24);
-}
+} */
 .parallax-container {
 	position: relative;
 	text-align: center;
@@ -43,6 +47,13 @@ body {
 	font-size: 1.5em;
 	color: white;
 	text-decoration: none;
+	font-family: "Sriracha", cursive !important;
+}
+.contactli a {
+	color: #e62c3a !important;
+}
+.contactli a:hover {
+	color: red !important;
 }
 .parallax-container img {
 	width: 100%;
@@ -59,13 +70,41 @@ body {
 	height: 100vh;
 	transform-style: preserve-3d;
 }
-.rellax div {
-	/* display: flex;
-	align-items: center;
-	justify-content: center; */
+.aboutMeDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-.techDStep {
-	transform: translateZ(100px);
+.aboutMePicDiv {
+	padding: 5%;
+	display: flex;
+	justify-content: center;
+	/* border: 1px solid red; */
+	background-image: linear-gradient(to bottom right, rgb(0, 13, 24), black);
+}
+.aboutMePic {
+	border: 5px solid orangered;
+	width: 260px;
+	border-radius: 50%;
+}
+.aboutMeDescriptionDiv {
+	/* border: 1px solid; */
+	font-size: 1.5em;
+	padding-left: 15%;
+	padding-right: 15%;
+	/* height: 1200px; */
+	/* max-width: 660px; */
+	font-family: "Sriracha", cursive !important;
+	/* text-align: justify; */
+	background-image: linear-gradient(to bottom left, black, rgb(0, 14, 24));
+}
+.aboutMeDescriptionDiv p {
+	text-align: justify;
+	line-height: 270%;
+}
+.title {
+	text-align: center;
+	font-size: 1.5em;
 }
 .kenburns-top {
 	animation: kenburns-top 3s ease-in-out infinite alternate both;
@@ -673,13 +712,12 @@ body {
 	}
 }
 
-.container {
+/* .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	/* border: 1px solid green; */
 }
 .container > div {
 	width: 32%;
@@ -695,10 +733,8 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	/* border: 1px solid red; */
-	/* height: 100px; */
-}
-.heartBeatPress {
+} */
+/* .heartBeatPress {
 	position: absolute;
 	top: 30%;
 	font-size: 100px;
@@ -712,7 +748,6 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	/* border: 1px solid red; */
 	top: 0;
 }
 .appearDiv {
@@ -735,27 +770,25 @@ body {
 .hiddenImg,
 .restartDiv p {
 	cursor: pointer;
-}
-.heartDiv {
+} */
+/* .heartDiv {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	height: 50vh;
-	/* background-color: orange; */
+	background-color: orange;
 	transform-style: preserve-3d;
-	/* overflow: hidden; */
 }
 .innerheartDiv {
 	transform: translateZ(200px);
-}
-.p-heart {
+} */
+/* .p-heart {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 2em;
-	/* transform: translateZ(100px); */
-}
+} */
 
 /* Tablet */
 @media only screen and (max-width: 800px) {
